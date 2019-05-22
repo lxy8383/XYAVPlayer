@@ -16,6 +16,7 @@
 		5A6413F2228E4B5D003F38CA /* XYAVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6413F1228E4B5D003F38CA /* XYAVPlayerTests.m */; };
 		5A6413FD228E4B5D003F38CA /* XYAVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6413FC228E4B5D003F38CA /* XYAVPlayerUITests.m */; };
 		5A64140C228E6186003F38CA /* XYAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A64140B228E6186003F38CA /* XYAVPlayer.m */; };
+		5A64140F228EBCF8003F38CA /* XYCropVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A64140E228EBCF8003F38CA /* XYCropVideoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		5A6413FE228E4B5D003F38CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A64140A228E6186003F38CA /* XYAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAVPlayer.h; sourceTree = "<group>"; };
 		5A64140B228E6186003F38CA /* XYAVPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAVPlayer.m; sourceTree = "<group>"; };
+		5A64140D228EBCF8003F38CA /* XYCropVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYCropVideoController.h; sourceTree = "<group>"; };
+		5A64140E228EBCF8003F38CA /* XYCropVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYCropVideoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				5A6413E7228E4B5D003F38CA /* main.m */,
 				5A64140A228E6186003F38CA /* XYAVPlayer.h */,
 				5A64140B228E6186003F38CA /* XYAVPlayer.m */,
+				5A64140D228EBCF8003F38CA /* XYCropVideoController.h */,
+				5A64140E228EBCF8003F38CA /* XYCropVideoController.m */,
 			);
 			path = XYAVPlayer;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				5A6413DD228E4B5A003F38CA /* ViewController.m in Sources */,
 				5A6413E8228E4B5D003F38CA /* main.m in Sources */,
 				5A6413DA228E4B5A003F38CA /* AppDelegate.m in Sources */,
+				5A64140F228EBCF8003F38CA /* XYCropVideoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

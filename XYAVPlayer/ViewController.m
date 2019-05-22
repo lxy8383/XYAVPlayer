@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "XYCropVideoController.h"
+
 
 @interface ViewController ()
 
@@ -16,7 +18,6 @@
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
 
 @property (nonatomic, strong) AVPlayerItem *playerItem;
-
 
 
 @end
@@ -37,11 +38,24 @@
     playButton.frame = CGRectMake(100, 450, 45, 30);
     playButton.backgroundColor = [UIColor redColor];
     [self.view addSubview:playButton];
+    
+    UIButton *nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    nextBtn.titleLabel.text = @"下一步";
+    nextBtn.frame = CGRectMake(200, 450, 45, 30);
+    nextBtn.backgroundColor = [UIColor redColor];
+    [nextBtn addTarget:self action:@selector(doNextAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:nextBtn];
 }
 
 - (void)doPlayerVideo:(UIButton *)sender
 {
     [self.myPlayer play];
+}
+
+- (void)doNextAction:(UIButton *)sender
+{
+    XYCropVideoController *cropVideoController = [[XYCropVideoController alloc]init];
+    [self.navigationController pushViewController:cropVideoController animated:YES];
 }
 
 - (void)playerWithUrl:(NSString *)urlString{
